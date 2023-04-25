@@ -60,7 +60,11 @@ p {
 .maja,
 .steffen,
 .dennis,
-.kristoffer {
+.kristoffer,
+.søren,
+.sebastian,
+.anne,
+.kenneth {
   position: relative;
   text-align: center;
 }
@@ -90,6 +94,11 @@ img {
   height: 400px;
   width: -webkit-fill-available;
   object-fit: cover;
+}
+
+.søren .top-img {
+  display: block;
+  object-fit: scale-down;
 }
 
 a,
