@@ -50,6 +50,7 @@ p {
   font-family: "grenadine-mvb", sans-serif;
   font-weight: 100;
   font-style: normal;
+  line-height: 1.5;
 }
 
 .quote {
@@ -130,6 +131,13 @@ h4 {
   background-color: #d3a809;
 }
 
+.fun {
+  font-family: "grenadine-mvb", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+}
+
 /* lavet ved hjælp af youtubevideo: https://www.youtube.com/watch?v=NHb3o3sP9iA */
 .top-img {
   position: absolute;
@@ -185,6 +193,7 @@ header img {
 
 iframe {
   width: -webkit-fill-available;
+  margin: 2%;
 }
 
 .own-logo {
