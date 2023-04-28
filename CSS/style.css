@@ -144,6 +144,7 @@ h4 {
   top: 0;
   opacity: 0;
   transition: all, 0.5s ease;
+  object-fit: scale-down;
 }
 
 .top-img:hover {
@@ -189,6 +190,9 @@ header img {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  height: fit-content;
 }
 
 iframe {
@@ -200,25 +204,39 @@ iframe {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  object-fit: scale-down;
+  background-color: white;
 }
 
 @media screen and (min-width: 768px) {
   /* Tablet version */
   img {
-    height: 650px;
-    width: 3500px;
+    height: 375px;
+    width: 375px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: none;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  /* Desktop version */
+  /* Desktop version - 1024 */
 
   img {
-    height: 400px;
-    width: 400px;
+    height: 335px;
+    width: 335px;
+    object-fit: cover;
   }
-  div {
-    display: inline-block;
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: none;
   }
 
   .business {
@@ -249,9 +267,69 @@ iframe {
   }
 
   /* Iværksætternes egen side */
+
+  h1 {
+    margin: 0;
+  }
+
+  h2 {
+    margin: 5px;
+  }
+
+  .socialM {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  .own-logo,
+  .so-me-logo {
+    margin: 2%;
+  }
+
   .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    margin: 2% 5% 0 5%;
+    display: inline-block;
+    /*grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    grid-template-areas:
+      "a b"
+      "c d";
+  }
+
+  .a {
+    grid-area: a;
+  }
+
+  .b {
+    grid-area: b;
+  }
+
+  .tiktok-embed {
+    grid-area: c;
+  }
+
+  .socialM {
+    grid-area: d;
+  }
+*/
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Desktop version - 1440px */
+  img {
+    height: 356px;
+    width: 356px;
+    object-fit: cover;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: none;
   }
 }
