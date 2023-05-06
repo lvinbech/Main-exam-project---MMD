@@ -65,7 +65,8 @@ p {
 .søren,
 .sebastian,
 .anne,
-.kenneth {
+.kenneth,
+.magnus {
   position: relative;
   text-align: center;
 }
@@ -92,7 +93,12 @@ p {
 }
 
 img {
-  height: 400px;
+  width: -webkit-fill-available;
+  object-fit: cover;
+  height: 305px;
+}
+
+.front img {
   width: -webkit-fill-available;
   object-fit: cover;
 }
@@ -160,6 +166,7 @@ header img {
 
 .year {
   padding: 0 5%;
+  margin: 1% 0% 0% 0%;
   font-family: "grenadine-mvb", sans-serif;
   font-weight: 600;
   font-style: normal;
@@ -208,18 +215,37 @@ iframe {
   background-color: white;
 }
 
-@media screen and (min-width: 768px) {
+.text {
+  padding: 1% 5%;
+}
+
+@media screen and (min-width: 600px) {
   /* Tablet version */
   img {
-    height: 375px;
-    width: 375px;
+    height: 600px;
+    width: -webkit-fill-available;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
   }
 
-  section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: none;
+  .pb {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  .front img {
+    width: -webkit-fill-available;
+    object-fit: cover;
+  }
+
+  h2 {
+    margin: 4%;
   }
 }
 
@@ -232,11 +258,24 @@ iframe {
     object-fit: cover;
   }
 
+  .pb {
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  p {
+    padding: 1%;
+  }
+
+  iframe {
+    height: 490px;
+  }
+
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: none;
   }
 
   .business {
@@ -268,17 +307,26 @@ iframe {
 
   /* Iværksætternes egen side */
 
-  h1 {
-    margin: 0;
-  }
-
   h2 {
     margin: 5px;
   }
 
+  .text {
+    padding: 1% 2%;
+  }
+
+  .fun {
+    padding: 2%;
+  }
+
+  .education,
+  .year {
+    padding: 0% 2%;
+  }
+
   .socialM {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-bottom: 20px;
     flex-direction: row;
     height: fit-content;
@@ -289,11 +337,14 @@ iframe {
     margin: 2%;
   }
 
+  .tiktok {
+    display: flex;
+  }
+
   .grid {
     margin: 2% 5% 0 5%;
     display: inline-block;
     /*grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
       "a b"
       "c d";
@@ -321,15 +372,13 @@ iframe {
 @media screen and (min-width: 1440px) {
   /* Desktop version - 1440px */
   img {
-    height: 356px;
-    width: 356px;
+    height: 380px;
+    width: 379.5px;
     object-fit: cover;
   }
 
   section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: none;
   }
 }
