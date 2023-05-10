@@ -138,7 +138,7 @@ h4 {
   margin: 0 20% 0 20%;
 }
 
-footer {
+.cta {
   margin: 250px 0 250px 0;
 }
 
@@ -251,6 +251,15 @@ iframe {
     justify-content: center;
   }
 
+  iframe {
+    width: 600px;
+    margin: 2%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 337px;
+  }
+
   .pb {
     height: 500px;
     width: 500px;
@@ -259,6 +268,7 @@ iframe {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    border: 20px solid #4b4237;
   }
 
   .front img {
@@ -276,7 +286,7 @@ iframe {
     font-size: 50px;
   }
 
-  footer {
+  .cta {
     margin: 230px 0 230px 0;
   }
 }
@@ -292,10 +302,6 @@ iframe {
 
   p {
     padding: 1%;
-  }
-
-  iframe {
-    height: 490px;
   }
 
   section {
@@ -323,6 +329,11 @@ iframe {
   .btn:hover {
     color: #f3f7f0;
     background-color: #d3a809;
+  }
+
+  iframe {
+    width: 900px;
+    height: 500px;
   }
 
   .business {
@@ -369,7 +380,7 @@ iframe {
   .socialM {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 20px;
+    margin-bottom: 10%;
     flex-direction: row;
     height: fit-content;
   }
@@ -387,24 +398,20 @@ iframe {
     margin-right: auto;
   }
 
-  .pb {
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
   .tiktok {
     display: flex;
   }
 
   .grid {
-    margin: 2% 5% 0 5%;
+    margin: 2% 3% 2% 3%;
+    padding: 2%;
+    border-radius: 90px 190px 60px 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "pb a"
       ". b";
+    background-color: #736b60;
   }
 }
 
