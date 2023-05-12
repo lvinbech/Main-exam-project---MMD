@@ -20,6 +20,7 @@ h1 {
   font-family: "grenadine-mvb", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #20063b;
 }
 
 h2 {
@@ -29,18 +30,21 @@ h2 {
   font-family: "grenadine-mvb", sans-serif;
   font-weight: 600;
   font-style: normal;
+  color: #20063b;
 }
 
 h3 {
   font-family: "grenadine-mvb", sans-serif;
   font-weight: 00;
   font-style: normal;
+  color: #20063b;
 }
 
 h4 {
   font-family: "grenadine-mvb", sans-serif;
   font-weight: 400;
   font-style: normal;
+  color: #20063b;
 }
 
 p {
@@ -51,11 +55,12 @@ p {
   font-weight: 100;
   font-style: normal;
   line-height: 1.5;
+  color: #20063b;
 }
 
 .quote {
-  font-size: 25px;
   text-align: center;
+  color: #20063b;
 }
 
 .maja,
@@ -302,6 +307,7 @@ iframe {
 
   p {
     padding: 1%;
+    color: #f3f7f0;
   }
 
   section {
