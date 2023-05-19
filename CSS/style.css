@@ -3,6 +3,44 @@
   box-sizing: border-box;
 }
 
+/* Lavet ved hjælp af Chat GBT - Style for the scroll-up button */
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #d3a809;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 9999;
+}
+
+/* Lavet ved hjælp af Chat GBT - Show the scroll-up button when user scrolls */
+.show-scroll-up {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Ekstra justeringer til scroll up knap lavet af mig selv */
+.scrUp {
+  height: 40px;
+  width: 40px;
+  padding: 20%;
+}
+
+.scroll-up:hover,
+.scrUp:hover {
+  height: 50px;
+  width: 50px;
+}
+
 /* Landing page */
 body {
   background-color: #f3f7f0;
@@ -35,7 +73,7 @@ h2 {
 
 h3 {
   font-family: "grenadine-mvb", sans-serif;
-  font-weight: 00;
+  font-weight: 300;
   font-style: normal;
   color: #20063b;
 }
@@ -222,7 +260,7 @@ header img {
 
 .socialM {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin-bottom: 20px;
   flex-wrap: wrap;
   height: fit-content;
@@ -231,6 +269,8 @@ header img {
 iframe {
   width: -webkit-fill-available;
   margin: 2%;
+  border-radius: 20px;
+  height: 190px;
 }
 
 .text {
@@ -288,11 +328,13 @@ iframe {
 
   .btn {
     background: #d3a809;
-    font-size: 50px;
+    font-size: 25px;
+    padding: 30px;
+    margin: 3% 30% 0 30%;
   }
 
   .cta {
-    margin: 230px 0 230px 0;
+    margin: 300px 0 230px 0;
   }
 }
 
@@ -369,6 +411,35 @@ iframe {
     margin: 3%;
   }
 
+  /* CSS til JavaScript - lavet ved hjælp af Chatgbt */
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
   /* Iværksætternes egen side */
   .text {
     padding: 1% 2%;
@@ -402,6 +473,7 @@ iframe {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;
   }
 
   .tiktok {
